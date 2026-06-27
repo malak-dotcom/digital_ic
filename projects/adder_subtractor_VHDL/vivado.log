@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Jun 27 17:37:20 2026
+# Process ID: 25000
+# Current directory: C:/Users/WEST/project_6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25444 C:\Users\WEST\project_6\project_6.xpr
+# Log file: C:/Users/WEST/project_6/vivado.log
+# Journal file: C:/Users/WEST/project_6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/WEST/project_6/project_6.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 872.531 ; gain = 134.445
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: fa4
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1010.766 ; gain = 105.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fa4' [C:/Users/WEST/project_6/project_6.srcs/sources_1/new/fa4.vhd:40]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/WEST/project_6/project_6.srcs/sources_1/imports/new/full_adder.vhd:34' bound to instance 'x0' of component 'full_adder' [C:/Users/WEST/project_6/project_6.srcs/sources_1/new/fa4.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'full_adder' [C:/Users/WEST/project_6/project_6.srcs/sources_1/imports/new/full_adder.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'full_adder' (1#1) [C:/Users/WEST/project_6/project_6.srcs/sources_1/imports/new/full_adder.vhd:39]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/WEST/project_6/project_6.srcs/sources_1/imports/new/full_adder.vhd:34' bound to instance 'x1' of component 'full_adder' [C:/Users/WEST/project_6/project_6.srcs/sources_1/new/fa4.vhd:48]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/WEST/project_6/project_6.srcs/sources_1/imports/new/full_adder.vhd:34' bound to instance 'x2' of component 'full_adder' [C:/Users/WEST/project_6/project_6.srcs/sources_1/new/fa4.vhd:49]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/WEST/project_6/project_6.srcs/sources_1/imports/new/full_adder.vhd:34' bound to instance 'x3' of component 'full_adder' [C:/Users/WEST/project_6/project_6.srcs/sources_1/new/fa4.vhd:50]
+ERROR: [Synth 8-97] array index 3 out of range [C:/Users/WEST/project_6/project_6.srcs/sources_1/new/fa4.vhd:50]
+ERROR: [Synth 8-285] failed synthesizing module 'fa4' [C:/Users/WEST/project_6/project_6.srcs/sources_1/new/fa4.vhd:40]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1066.195 ; gain = 161.008
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+7 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 27 17:44:02 2026...
